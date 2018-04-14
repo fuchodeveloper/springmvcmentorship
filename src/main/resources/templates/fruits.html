@@ -1,0 +1,26 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Fruits and their properties</h1>
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr th:each="fruit : ${fruits}">
+            <td th:text="${fruit.id}">null</td>
+            <td th:text="${fruit.name}">null</td>
+            <td th:text="${fruit.shape}">null</td>
+            <td th:text="${fruit.quantity}">null</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
