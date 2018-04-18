@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Handling Form: View</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+    <h1>Howdy!</h1>
+    <p th:text="'Good day, ' + ${greeting.firstName} + ' ' + ${greeting.lastName}"/>
+    <a href="/greeting">Submit another message</a>
+</body>
+</html>

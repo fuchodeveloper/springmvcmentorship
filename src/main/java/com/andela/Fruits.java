@@ -7,6 +7,10 @@ public class Fruits {
 	private String shape;
 	private String quantity;
 
+	public Fruits(){
+
+	}
+
 
 	public Fruits(String id, String name, String shape, String quantity) {
 		super();
